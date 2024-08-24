@@ -27,6 +27,18 @@ def add_user(ident, name, lastname, birthday):
         cursor.execute(instruction)
         connection.commit()
         print("User added")
-    except:
-        print("Error when adding the user")
+    except Exception as err:
+        print("Error when adding the user", err)
     return True
+
+def consult_user(ident):
+    instruction = "SELECT * FROM users WHERE id =" + ident
+    connection = connectionSQL()
+    cursor = connection.cursor()
+    try:
+        cursor.execute(instruction)
+        result_data = cursor.fetchall()
+        return result_data
+    except Exception as err:
+        print("Error consulting the user", err)
+        return False

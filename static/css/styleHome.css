@@ -1,0 +1,23 @@
+h1, div {
+    text-align: center;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    height: 420px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 20px;
+}
