@@ -1,6 +1,6 @@
 from database.db import *
 from flask import render_template, request
-from controller.s3_administrator import connection_s3, save_file, upload_file
+#from controller.s3_administrator import connection_s3, save_file, upload_file
 
 def func_home_page():
     return render_template("home.html")
